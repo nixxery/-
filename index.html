@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<title>Hello, world!</title>
+</head>
+
+<body>
+	<center>
+	<div class="container">
+		<!--<div class="row justify-content-between">
+			<div class="card text-center text-white bg-dark" style="width: 18rem;">
+				<img class="card-img-top" src="01.png" alt="">
+				<div class="card-body">
+					<h4 class="card-title">Украина</h4>
+					<p class="card-text">Страна бывшего СССР</p>
+					<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Нажав эту кнопку, Вы подтверждаете покупку">1000 гривен</button>
+			  	</div>
+			</div>
+			
+			<div class="card text-center text-white bg-dark" style="width: 18rem;">
+				<img class="card-img-top" src="1.jpg" alt="">
+				<div class="card-body">
+					<h4 class="card-title">Калыван</h4>
+					<p class="card-text">Казакова Аня 8Б</p>
+					<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Нажав эту кнопку, Вы подтверждаете покупку">Бесценно</button>
+			  	</div>
+			</div>
+	
+			<div class="card text-center text-white bg-dark" style="width: 18rem;">
+				<img class="card-img-top" src="ban.jpg" alt="">
+				<div class="card-body">
+					<h4 class="card-title">Казакова Аня 8Б</h4>
+					<p class="card-text">Калыван 2.0</p>
+					<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Нажав эту кнопку, Вы подтверждаете покупку">40 гривен</button>
+			  	</div>
+			</div>
+		</div>-->
+
+
+		<div class="row justify-content-center">
+		
+			<div id="carouselId" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselId" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselId" data-slide-to="1"></li>
+					<li data-target="#carouselId" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="card text-center text-white bg-dark" style="width: 18rem;">
+						<img class="card-img-top" src="01.png" alt="">
+						<div class="card-body">
+							<h4 class="card-title">Украина</h4>
+							<p class="card-text">Страна бывшего СССР</p>
+							<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Нажав эту кнопку, Вы подтверждаете покупку">1000 гривен</button>
+						</div>
+					</div>
+				</div>
+					<div class="carousel-item">
+						<div class="card text-center text-white bg-dark" style="width: 18rem;">
+						<img class="card-img-top" src="1.jpg" alt="">
+						<div class="card-body">
+							<h4 class="card-title">Калыван</h4>
+							<p class="card-text">Казакова Аня 8Б</p>
+							<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Нажав эту кнопку, Вы подтверждаете покупку">Бесценно</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+							<div class="card text-center text-white bg-dark" style="width: 18rem;">
+								<img class="card-img-top" src="ban.jpg" alt="">
+								<div class="card-body">
+								<h4 class="card-title">Казакова Аня 8Б</h4>
+								<p class="card-text">Калыван 2.0</p>
+								<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Нажав эту кнопку, Вы подтверждаете покупку">40 гривен</button>
+							</div>
+						</div>
+					</div>
+				<a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</center>
+	
+
+	<style type="text/css">
+		*
+	</style>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+	<script type="text/javascript">
+
+		$("#carouselID").carousel({interval: 500});
+
+
+
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+
+		$(function () {
+			$('[data-toggle="popover"]').popover({ trigger: 'hover' });
+		});
+	</script>
+</body>
+
+</html>
